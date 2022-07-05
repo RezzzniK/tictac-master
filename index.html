@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="//db.onlinewebfonts.com/c/5ad76325846a9cdeaf35607f9b7bc65c?family=Invaders"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <div>
+      <!-- Game field -->
+      <canvas id="cvs" width="450" height="450"></canvas>
+      <div id="options">
+        <h1>
+          Welcome to <a class="enter">Tic</a> <a class="cancel">Tac</a>
+          <a class="enter">Toe</a>
+        </h1>
+        <h2>Choose your Symbol:</h2>
+        <p class="hide" id="warning">
+          PLEASE SELECT SYMBOL BEFORE YOU HIT ENTER
+        </p>
+        <button class="button" id="x">X</button>
+        <button class="button" id="o">O</button>
+        <h2>Hit <a class="enter">ENTER</a> to <a class="enter">PLAY</a></h2>
+        <h3>
+          Hit <a class="cancel">BACKSPACE</a> to <a class="cancel">CANCEL</a>
+        </h3>
+      </div>
+      <div class="gamover hide" id="gameover"></div>
+    </div>
+    <!-- End of Game Field -->
+    <div id="mainContainer">
+      <div id="content">
+        <video id="contentElement"></video>
+
+        <div id="adContainer"></div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="//imasdk.googleapis.com/js/sdkloader/ima3.js"
+    ></script>
+    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
